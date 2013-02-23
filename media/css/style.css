@@ -187,13 +187,15 @@ span
 	font-weight: 300; 
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
-	text-shadow: 1px 1px #000000;
+	text-shadow: 1px 1px #000;
+	-webkit-font-smoothing: antialiased;
 }
 
 .desc_countdown {
 	margin-top: 30px;
 	color: #fff;
-	text-shadow: 1px 1px #000000;
+	text-shadow: 1px 1px #000;
+	-webkit-font-smoothing: antialiased;
 	font-family: 'Open Sans';
 	font-size: 28px;
 	font-weight: 300;
@@ -432,7 +434,8 @@ ul#home-slides li
 	font-weight: 300; 
 	text-align: left;
 	color: #fff;
-	text-shadow: 1px 1px #000000;
+	text-shadow: 1px 1px #000;
+	-webkit-font-smoothing: antialiased;
 }
 .services .list_carousel
 {
