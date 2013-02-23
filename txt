@@ -1,0 +1,23 @@
+home
+about
+event
+photos
+guestbook
+rsvp
+contact us
+
+
+fitur:
+count down
+
+
+task:
+count down --> ok
+logo --> ok 
+nurunin teetimonial di home --> ok
+favicon  --> ok
+
+
+credit:
+http://hdw.eweb4.com/out/702598.html
+http://hdw.eweb4.com/out/406358.html
