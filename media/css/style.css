@@ -12,11 +12,11 @@ p
 	font-size: 14px;
 	letter-spacing: -0.03em;
 	line-height: 28px;
-	color: #4f6367;
+	color: #2d2924;
 }
-.about p, .news p, .contact p, .contact-form p
+.photos p, .news p, .contact p, .contact-form p
 {
-	color: #8b999d;
+	color: #edece9;
 }
 a,
 a:visited, 
@@ -59,15 +59,17 @@ a:active
     text-align: center;
     vertical-align: middle;
 }
-.services
+.about
 {
 	padding-bottom: 185px;
 }
-.about
+.photos
 {
 	padding-bottom: 90px;
-	background-color: #1c2224;
+	background-color: #797264;
 }
+
+
 .subscribe
 {
 	background-color: #232b2d;
@@ -108,7 +110,7 @@ h1
 {
 	font-size: 28px;
 	line-height: 32px;
-	color: #e95b37;
+	color: #2d2924;
 }
 h2
 {
@@ -118,13 +120,13 @@ h2
 	line-height: 24px;
 	font-weight: bold;
 	letter-spacing: -0.03;
-	color: #e95b37;
+	color: #2d2924;
 	border-left: 10px solid #e95b37;
 }
 h3
 {
 	font-size: 24px;
-	color: #e95b37;
+	color: #2d2924;
 }
 .summary-dark-bg
 {
@@ -132,8 +134,8 @@ h3
 	font-size: 34px;
 	line-height: 34px;
 	font-weight: 300;
-	color: #8b999d;
-	border-bottom: 10px solid #262f31;
+	color: #edece9;
+	border-bottom: 10px solid #403c35;
 }
 .summary-white-bg
 {
@@ -141,8 +143,8 @@ h3
 	font-size: 34px;
 	line-height: 34px;
 	font-weight: 300; 
-	color: #4f6367;
-	border-bottom: 10px solid #dde8ea;	
+	color: #2d2924;
+	border-bottom: 10px solid #cac8bf;	
 }
 .summary-small-dark-bg
 {
@@ -150,11 +152,11 @@ h3
 	line-height: 34px;
 	font-weight: 300; 
 	letter-spacing: -0.03em;
-	color: #8b999d;
+	color: #edece9;
 }
 .summary-small-white-bg
 {
-	color: #4f6367;
+	color: #2d2924;
 	font-size: 28px;
 	letter-spacing: -0.03em;
 	line-height: 34px;
@@ -300,29 +302,29 @@ span
 }
 
 /******************************************************************************/
-/*  SERVICES                                                                  */
+/*  ABOUT                                                                  */
 /******************************************************************************/
-ul.services-list
+ul.about-list
 {
 }
-ul.services-list li        
+ul.about-list li        
 {
 	clear: both;
 	margin-bottom: 40px;
 }
-.services-wrapper
+.about-wrapper
 {
 	float: left;
 	width: 270px;
 }
-.services-list img
+.about-list img
 {
 	display: block;
 	float: left;
 	margin-right: 25px;
 	width: 75px;
 }
-.service-title
+.about-title
 {
 	display: block;          
 	font-size: 11px;
@@ -331,22 +333,22 @@ ul.services-list li
 	text-transform: uppercase;
 	color: #97aeb3;
 }
-.services-content
+.about-content
 {
 	font-size: 14px;
 	line-height: 28px;
 	letter-spacing: -0.03em;
-	color: #4f6367;
+	color: #2d2924;
 }
-.services-role
+.about-role
 {
 	font-size: 34px;
 	line-height: 34px;
 	letter-spacing: -0.03em;
 	font-weight: bold;
-	color: #4f6367;
+	color: #2d2924;
 }
-.services-line
+.about-line
 {
 	margin-left: 103px;
 	width: 40px;
@@ -439,9 +441,9 @@ ul#home-slides li
 }
 .services .list_carousel
 {
-	border-top: 10px solid #dde8ea; 
-	border-left: 10px solid #dde8ea;
-	border-right: 10px solid #dde8ea;
+	border-top: 10px solid #cac8bf; 
+	border-left: 10px solid #cac8bf;
+	border-right: 10px solid #cac8bf;
 }
 ul#testimonials-slides li
 {
@@ -451,14 +453,14 @@ ul#testimonials-slides li
 	line-height: 35px;
 	text-align: left;
 	font-style: italic;
-	color: #83999d;
+	color: #2d2924;
 }
 ul#about-left-slides li, ul#about-middle-slides li, ul#about-right-slides li
 {
 	height: 300px;
 	font-size: 14px;
 	line-height: 28px;
-	color: #83999d;
+	color: #2d2924;
 }
 .testimonials
 {
@@ -468,7 +470,7 @@ ul#about-left-slides li, ul#about-middle-slides li, ul#about-right-slides li
 	font-size: 14px;
 	line-height: 70px;
 	letter-spacing: -0.03em;
-	background-color: #4f6367;
+	background-color: #2d2924;
 	color: #ecf1f2;
 }
 span.span-testimonials
@@ -482,7 +484,7 @@ span.span-testimonials
 {
 	float: right;
 	line-height: 70px;
-	color: #83999d;
+	color: #2d2924;
 }
 .name
 {
@@ -494,7 +496,7 @@ span.span-testimonials
 	letter-spacing: -0.03em;
 	text-align: center;
 	background-color: #fff;
-	color: #4f6367;
+	color: #2d2924;
 }
 span.span-name
 {
@@ -596,7 +598,7 @@ ul#filterOptions li a
 	line-height: 34px;
 	letter-spacing: 0.15em;
 	font-weight: bold;
-	color: #4f6367;
+	color: #2d2924;
 	text-decoration: none;
 }
 ul#filterOptions li.last a 
@@ -608,7 +610,7 @@ ul#filterOptions li a:hover
 }
 ul#filterOptions li.active a 
 {
-	border-bottom: 10px solid #dde8ea; 
+	border-bottom: 10px solid #cac8bf; 
 }
 ul.gallery
 {
@@ -672,7 +674,7 @@ ul.gallery li.item.portfolio-text
 	letter-spacing: -0.03em;
 	font-weight: 400; 
 	text-align: left;
-	color: #4F6367;
+	color: #2d2924;
 }
 
 /******************************************************************************/
@@ -779,7 +781,7 @@ span.span-milestones
 	font-size: 20px;
 	line-height: 24px;
 	letter-spacing: -0.03em;
-	color: #4f6367;
+	color: #2d2924;
 }
 .milestones-wrapper
 {
