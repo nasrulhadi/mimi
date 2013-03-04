@@ -61,15 +61,13 @@ a:active
 }
 .about
 {
-	padding-bottom: 185px;
+	padding-bottom: 145px;
 }
 .photos
 {
 	padding-bottom: 90px;
 	background-color: #797264;
 }
-
-
 .subscribe
 {
 	background-color: #232b2d;
@@ -180,7 +178,6 @@ span
 	background-position: center top;
 	background-repeat: no-repeat;
 }
-
 .countdown
 {
 	padding-bottom: 10px;
@@ -192,8 +189,7 @@ span
 	text-shadow: 1px 1px #000;
 	-webkit-font-smoothing: antialiased;
 }
-
-.desc_countdown {
+.desc-countdown {
 	margin-top: 30px;
 	color: #fff;
 	text-shadow: 1px 1px #000;
@@ -302,8 +298,28 @@ span
 }
 
 /******************************************************************************/
-/*  ABOUT                                                                  */
+/*  ABOUT                                                                     */
 /******************************************************************************/
+
+.about-testimonials 
+{
+	background-image: url('../images/quote.png');
+	background-color: transparent;
+	background-position: left top;
+	background-repeat: no-repeat;
+	color: #2d2924;
+	font-size: 28px;
+	letter-spacing: -0.03em;
+	line-height: 34px;
+	font-weight: 300;
+	text-indent: 40px;
+}
+
+.about-border-bottom
+{
+	border-bottom: 10px solid #cac8bf;
+}
+
 ul.about-list
 {
 }
@@ -358,6 +374,7 @@ ul.about-list li
 /******************************************************************************/
 /*  SLIDERS                                                                   */
 /******************************************************************************/
+
 .list_carousel ul 
 {
 	display: block;
@@ -386,7 +403,7 @@ ul.about-list li
 	float: left;
 	width: 140px;
 	height: 90px;
-	background-color: #f05c45;
+	background-color: #797264;
 }
 a#home-next
 {
@@ -470,7 +487,7 @@ ul#about-left-slides li, ul#about-middle-slides li, ul#about-right-slides li
 	font-size: 14px;
 	line-height: 70px;
 	letter-spacing: -0.03em;
-	background-color: #2d2924;
+	background-color: #403C35;
 	color: #ecf1f2;
 }
 span.span-testimonials
@@ -495,8 +512,8 @@ span.span-testimonials
 	line-height: 70px;
 	letter-spacing: -0.03em;
 	text-align: center;
-	background-color: #fff;
-	color: #2d2924;
+	background-color: #403C35;
+	color: #edece9;
 }
 span.span-name
 {
@@ -1042,6 +1059,10 @@ div.vimeo
 /******************************************************************************/
 /*  MARGINS                                                                   */
 /******************************************************************************/
+.m-top-30
+{
+	margin-top: 30px;
+}
 .m-top-45
 {
 	margin-top: 45px;
