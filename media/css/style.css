@@ -14,7 +14,7 @@ p
 	line-height: 28px;
 	color: #2d2924;
 }
-.photos p, .news p, .contact p, .contact-form p
+.event p, .news p, .contact p, .contact-form p
 {
 	color: #edece9;
 }
@@ -63,9 +63,9 @@ a:active
 {
 	padding-bottom: 145px;
 }
-.photos
+.event
 {
-	padding-bottom: 90px;
+	padding-bottom: 150px;
 	background-color: #797264;
 }
 .subscribe
@@ -94,6 +94,15 @@ a:active
 {
 	padding-bottom: 110px;
 	background-color: #1c2224;
+}
+.divider
+{
+	width: 450px;
+	height: 50px;
+	background-image: url('../images/divider.png');
+	background-color: transparent;
+	background-position: center bottom;
+	background-repeat: no-repeat;
 }
 footer
 {
@@ -129,20 +138,22 @@ h3
 .summary-dark-bg
 {
 	padding-bottom: 30px;
-	font-size: 34px;
-	line-height: 34px;
+	font-size: 50px;
+	line-height: 55px;
 	font-weight: 300;
 	color: #edece9;
 	border-bottom: 10px solid #403c35;
+	font-family: 'Great Vibes', cursive;
 }
 .summary-white-bg
 {
 	padding-bottom: 30px;
-	font-size: 34px;
-	line-height: 34px;
+	font-size: 50px;
+	line-height: 55px;
 	font-weight: 300; 
 	color: #2d2924;
-	border-bottom: 10px solid #cac8bf;	
+	border-bottom: 10px solid #cac8bf;
+	font-family: 'Great Vibes', cursive;
 }
 .summary-small-dark-bg
 {
@@ -163,6 +174,13 @@ h3
 span
 {
 	font-weight: bold;
+}
+
+.drop-cap
+{
+	font-family: 'Great Vibes', cursive;
+	margin-right: 7px;
+	font-size: 22px;
 }
 
 /******************************************************************************/
@@ -314,62 +332,131 @@ span
 	font-weight: 300;
 	text-indent: 40px;
 }
-
 .about-border-bottom
 {
 	border-bottom: 10px solid #cac8bf;
 }
 
-ul.about-list
-{
-}
-ul.about-list li        
-{
-	clear: both;
-	margin-bottom: 40px;
-}
-.about-wrapper
-{
-	float: left;
-	width: 270px;
-}
-.about-list img
+
+
+/******************************************************************************/
+/*  EVENT                                                                     */
+/******************************************************************************/
+
+/* left */
+
+.event-list img
 {
 	display: block;
 	float: left;
-	margin-right: 25px;
-	width: 75px;
+	padding-top: 10px;
+	margin-right:10px;
 }
-.about-title
+span.event-day
+{
+	font-size: 90px;
+	line-height: 90px;
+	color: #FAF9F6;
+	display:block;
+}
+div.event-date
+{
+	padding-left:75px;
+	color: #edece9;
+	font-size: 11px;
+	text-align:right;
+}
+span.span-event
+{
+	display: block; 
+	margin-bottom: 10px;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: -0.03em;
+	color: #edece9;
+}
+.event-wrapper
+{
+	width: 190px;
+	float: left;
+	margin-right:25px;
+	margin-bottom:30px;
+}
+ul.event-list
+{
+}
+ul.event-list li        
+{
+	clear: both;
+	margin-bottom: 50px;
+}
+
+
+
+/* right */
+
+.event-right-title
 {
 	display: block;          
 	font-size: 11px;
 	line-height: 11px;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
-	color: #97aeb3;
+	color: #BFAD94;
 }
-.about-content
+.event-right-content
 {
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 28px;
 	letter-spacing: -0.03em;
-	color: #2d2924;
+	color: #edece9;
+	font-weight:bold;
 }
-.about-role
+.event-right-role
 {
 	font-size: 34px;
 	line-height: 34px;
 	letter-spacing: -0.03em;
 	font-weight: bold;
-	color: #2d2924;
+	color: #F5F4F1;
 }
-.about-line
+.event-right-line
 {
 	margin-left: 103px;
 	width: 40px;
-	border-top: 1px solid #97aeb3;
+	border-top: 1px solid #BFAD94;
 }
+.event-right-wrapper
+{
+	float: left;
+	width: 180px;
+	margin-right:25px;
+	margin-bottom:50px;
+	border-left: 10px solid #403c35;
+	padding-left:25px;
+}
+ul.event-right-list
+{
+}
+ul.event-right-list li        
+{
+	clear: both;
+	margin-bottom: 40px;
+}
+
+
+/******************************************************************************/
+/*  CHART                                                                     */
+/******************************************************************************/
+.chart
+{
+	width: 100%;
+	height: 330px;
+	background-image: url('../images/chart.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
 
 /******************************************************************************/
 /*  SLIDERS                                                                   */
@@ -521,77 +608,6 @@ span.span-name
 	font-weight: normal;
 }
 
-/******************************************************************************/
-/*  SUBSCRIBE                                                                 */
-/******************************************************************************/
-#subscriberEmail
-{
-	float: left;
-	width: 450px;
-	margin-top: 1px;
-	padding-top: 21px;
-	padding-bottom: 20px;
-	font-size: 14px;
-	letter-spacing: 0em;
-	text-indent: 15px;
-    color: #9b9b9b;
-	border: none;
-	border-top: 10px solid #2c3739;
-	border-left: 10px solid #2c3739;
-	border-bottom: 10px solid #2c3739;
-	outline: none;
-	-moz-border-radius: 0em; /* Firefox */
-	-webkit-border-radius: 0em; /* Safari, Chrome */
-	border-radius: 0em; /* CSS3 */
-}
-#subscribeButton
-{
-	float: left;
-	width: 75px;
-	height: 78px;
-	font-size: 14px;
-	letter-spacing: 0em;
-	line-height: 78px;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #fff;
-	background-color: #f05c45;	
-	border: none;
-	outline: none;
-	cursor: pointer;
-}
-#subscribeButton.hover-effect
-{
-	background-color: #dc543f;	
-}
-.subscribe .one-third
-{
-	font-size: 14px;
-	letter-spacing: -0.03em;
-	line-height: 28px;
-	color: #8b999d;
-	text-align: left;
-}
-.subscribe p
-{
-	float: left;
-	font-size: 12px;
-	color: #99aaae;
-	padding-left: 25px;
-	margin-bottom: 0px;
-}
-#display 
-{
-	float: left;
-	margin-left: 20px;
-	width: 200px;
-	height: 30px;
-	text-align: left;
-	font-size: 12px;
-	line-height: 30px;
-	color: #f05c45;
-}
 
 /******************************************************************************/
 /*  PORTFOLIO                                                                 */
@@ -814,17 +830,7 @@ ul.milestones-list li
 	margin-bottom: 50px;
 }
 
-/******************************************************************************/
-/*  CHART                                                                     */
-/******************************************************************************/
-.chart
-{
-	width: 100%;
-	height: 330px;
-	background-image: url('../images/chart.png');
-	background-position: center;
-	background-repeat: no-repeat;
-}
+
 
 /******************************************************************************/
 /*  CONTACT                                                                   */
