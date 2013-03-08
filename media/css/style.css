@@ -68,12 +68,7 @@ a:active
 	padding-bottom: 150px;
 	background-color: #797264;
 }
-.subscribe
-{
-	background-color: #232b2d;
-	padding-bottom: 40px;
-}
-.portfolio
+.photos
 {
 	padding-bottom: 200px;
 }
@@ -610,7 +605,7 @@ span.span-name
 
 
 /******************************************************************************/
-/*  PORTFOLIO                                                                 */
+/*  PHOTOS                                                                    */
 /******************************************************************************/
 ul#filterOptions 
 {
@@ -722,7 +717,7 @@ ul.gallery li.item.portfolio-text
 	left: 0;
 	top: 0;
 	font-size: 11px;
-	background-color: #f05c45;
+	background-color: #797264;
     z-index: 120;
 }
 .item-overlay a.preview 

@@ -149,7 +149,7 @@ jQuery(window).load(function() {
 	}
 	
 	/******************************************************************************/
-	/*  PORTFOLIO ITEM IMAGE HOVER                                                */
+	/*  PHOTOS ITEM IMAGE HOVER                                                   */
 	/******************************************************************************/
 	jQuery("ul.gallery li .item-overlay").hide();
 	
