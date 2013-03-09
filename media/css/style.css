@@ -72,6 +72,17 @@ a:active
 {
 	padding-bottom: 200px;
 }
+.contact
+{
+	background-color: #797264;
+}
+.contact-form
+{
+	padding-bottom: 110px;
+	background-color: #797264;
+}
+
+
 .news
 {
 	padding-bottom: 110px;
@@ -81,15 +92,7 @@ a:active
 {
 	padding-bottom: 70px;
 }
-.contact
-{
-	background-color: #1c2224;
-}
-.contact-form
-{
-	padding-bottom: 110px;
-	background-color: #1c2224;
-}
+
 .divider
 {
 	width: 450px;
@@ -102,7 +105,7 @@ a:active
 footer
 {
 	height: 235px; 
-	background-color: #242c2e;
+	background-color: #403C35;
 }
 
 /******************************************************************************/
@@ -849,7 +852,7 @@ span.span-contact-form
 	font-size: 14px;
 	line-height: 28px;
 	letter-spacing: -0.03em;
-	color: #8b999d;		
+	color: #edece9;		
 }
 .contact-form input[type=text]
 {	
@@ -860,8 +863,8 @@ span.span-contact-form
 	padding-bottom: 20px;
 	text-indent: 15px;
     font-size: 14px;
-  	background-color: #262f31;
-	color: #b1b0b0; 
+  	background-color: #403C35;
+	color: #edece9; 
 	border: none;
 	outline: none; 
 }
@@ -876,8 +879,8 @@ span.span-contact-form
 	font-size: 14px;
 	line-height: 14px; 
 	text-indent: 15px;
-	background-color: #262f31;
-	color: #b1b0b0;
+	background-color: #403C35;
+	color: #edece9;
 	overflow: auto;
     border: none;
 	outline: none;
@@ -892,15 +895,15 @@ span.span-contact-form
 	font-size: 14px;
 	line-height: 55px;
 	text-decoration: none;
-	background-color: #f05c45;
-	color: #fff;
+	background-color: #625b51;
+	color: #edece9;
 	border: none;
 	outline: none;
 	cursor: pointer;
 }
 .submit-btn.hover-effect
 {
-	background-color: #dc543f;
+	background-color: #403C35;
 }
 #mail-message 
 {
@@ -922,12 +925,13 @@ footer
 footer p
 {
 	padding-top: 40px;
-	color: #516367;
+	color: #edece9;
 }
 .socio_contact 
 {
 	width: 209px;	
 	margin: 0 auto;
+	margin-top:40px;
 }
 .socio_contact ul 
 {
@@ -962,6 +966,12 @@ a.socio_contact_facebook {background: transparent url('../images/contact_faceboo
 a.socio_contact_dribbble {background: transparent url('../images/contact_dribbble_icon.png') no-repeat;}
 a.socio_contact_pinterest {background: transparent url('../images/contact_pinterest_icon.png') no-repeat;}
 a.socio_contact_flickr {background: transparent url('../images/contact_flickr_icon.png') no-repeat;}
+
+.love 
+{
+	color: #F80365;
+	padding: 0 2px;
+}
 
 /******************************************************************************/
 /*  POPUP                                                                     */

@@ -130,9 +130,9 @@ jQuery(window).load(function() {
 	}
 	if(!(is_touch_device())){
 		jQuery('.submit-btn, #subscribeButton').hover(function(){
-			jQuery(this).css('background-color', '#dc543f');
+			jQuery(this).css('background-color', '#403C35');
 		}, function() {
-			jQuery(this).css('background-color', '#f05c45');
+			jQuery(this).css('background-color', '#625b51');
 		});
 	}
 	else {
