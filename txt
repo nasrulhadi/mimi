@@ -12,10 +12,18 @@ count down
 
 
 task:
-count down --> ok
-logo --> ok 
-nurunin teetimonial di home --> ok
-favicon  --> ok
+divider warna gelap buat background putih
+ganti icon social media
+php contact form -->
+logo ring diganti tulisan nama mempelai
+twitter feed
+
+
+next:
+fullwscreen home view
+responsive
+menyiapkan halaman buat demo
+photosop
 
 
 credit:

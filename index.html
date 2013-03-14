@@ -15,7 +15,6 @@
 	
 	<link type="text/css" rel="stylesheet" href="media/css/clear.css" />
 	<link type="text/css" rel="stylesheet" href="media/css/prettyPhoto.css" />
-	
 	<link type="text/css" rel="stylesheet" href="media/css/grid.css" />
 	<link type="text/css" rel="stylesheet" href="media/css/style.css" />
 	<link type="text/css" rel="stylesheet" href="media/css/responsive.css" />
@@ -34,7 +33,9 @@
 	<script type="text/javascript" src="media/js/jquery.omniwindow.js"></script>
 	<script type="text/javascript" src="media/js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="media/js/photos.js"></script>
+	<script type="text/javascript" src="media/js/mail.js"></script>
 	<script type="text/javascript" src="media/js/main.js"></script>
+	<script type="text/javascript" src="media/js/twitter.js"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<script type="text/javascript" src="media/js/respond.src.js"></script>
@@ -54,7 +55,7 @@
 			<div class="column-560 m-top-115">
 				<div class="countdown left" id="countdown"></div>
 				<div class="clear"></div>
-				<div class="desc-countdown left">something big is going to happen</div>			
+				<div class="desc-countdown left">something Big is going to happen...</div>			
 			</div>
 			<div class="clear"></div>
 			<div class="column-510 m-top-200">
@@ -89,9 +90,7 @@
 							<li><a href="#about">About</a></li>
 							<li><a href="#event">Event</a></li>
 							<li><a href="#photos">Photos</a></li>
-							<li><a href="#news">Guestbook</a></li>
-							<li><a href="#milestones">RSVP</a></li>
-							<li class="last"><a href="#contact">Contact Us</a></li>
+							<li class="last"><a href="#contact">Contact Us / RSVP</a></li>
 						</ul>
 					</aside>
 				</nav>
@@ -263,6 +262,10 @@
 			<div class="divider"></div>
 			</div>
 			<div class="clear"></div>
+			<div class="m-bottom-60">				
+				<div id="jstwitter"></div>
+			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
 		
@@ -271,9 +274,8 @@
 		<div class="container">
 			<div class="one-third m-top-115">
 				<div class="summary-white-bg">
-					Showcase. <br />
-					check our
-					<span>Gallery</span>.					
+					Showcase, check <br />
+					our <span>Moments</span>.					
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -392,238 +394,9 @@
 			</div>
 			<div class="clear"></div>
 		</div>
-		<div id="inline-text1" style="display:none;">
-			<div class="inline-text">
-				<h1 class="m-bottom-30">Everything is designed. Few things are designed well.</h1> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis dui quis ipsum pulvinar varius. Quisque congue pharetra sollicitudin. Donec consequat cursus felis. Curabitur molestie, sapien vel tempor sollicitudin, eros dolor tristique elit, ac dictum mauris urna id felis. Aliquam leo nulla, laoreet eget bibendum nec, suscipit sit amet lectus. <br /> <br />Quisque vitae eros nisi. Sed molestie interdum nunc, id egestas odio posuere ac. Mauris quam felis, convallis at mollis et, faucibus at nisl. Pellentesque sit amet urna sed magna vestibulum malesuada. Etiam luctus enim id metus tempus quis semper ante placerat. Morbi ligula sapien, semper quis condimentum vitae, congue et lacus.
-			</div>	
-		</div>
-		<div id="inline-text2" style="display:none;">
-			<div class="inline-text">
-				<h1 class="m-bottom-30">Technology over technique produces emotionless design.</h1> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis dui quis ipsum pulvinar varius. Quisque congue pharetra sollicitudin. Donec consequat cursus felis. Curabitur molestie, sapien vel tempor sollicitudin, eros dolor tristique elit, ac dictum mauris urna id felis. Aliquam leo nulla, laoreet eget bibendum nec, suscipit sit amet lectus. <br /> <br />Quisque vitae eros nisi. Sed molestie interdum nunc, id egestas odio posuere ac. Mauris quam felis, convallis at mollis et, faucibus at nisl. Pellentesque sit amet urna sed magna vestibulum malesuada. Etiam luctus enim id metus tempus quis semper ante placerat. Morbi ligula sapien, semper quis condimentum vitae, congue et lacus.
-			</div>	
-		</div>
-		<div id="inline-text3" style="display:none;">
-			<div class="inline-text">
-				<h1 class="m-bottom-30">Graphic design will save the world right after rock and roll does.</h1> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis dui quis ipsum pulvinar varius. Quisque congue pharetra sollicitudin. Donec consequat cursus felis. Curabitur molestie, sapien vel tempor sollicitudin, eros dolor tristique elit, ac dictum mauris urna id felis. Aliquam leo nulla, laoreet eget bibendum nec, suscipit sit amet lectus. <br /> <br />Quisque vitae eros nisi. Sed molestie interdum nunc, id egestas odio posuere ac. Mauris quam felis, convallis at mollis et, faucibus at nisl. Pellentesque sit amet urna sed magna vestibulum malesuada. Etiam luctus enim id metus tempus quis semper ante placerat. Morbi ligula sapien, semper quis condimentum vitae, congue et lacus.
-			</div>	
-		</div>
-		<div id="inline-text4" style="display:none;">
-			<div class="inline-text">
-				<h1 class="m-bottom-30">Many things difficult to design prove easy to perform.</h1> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis dui quis ipsum pulvinar varius. Quisque congue pharetra sollicitudin. Donec consequat cursus felis. Curabitur molestie, sapien vel tempor sollicitudin, eros dolor tristique elit, ac dictum mauris urna id felis. Aliquam leo nulla, laoreet eget bibendum nec, suscipit sit amet lectus. <br /> <br />Quisque vitae eros nisi. Sed molestie interdum nunc, id egestas odio posuere ac. Mauris quam felis, convallis at mollis et, faucibus at nisl. Pellentesque sit amet urna sed magna vestibulum malesuada. Etiam luctus enim id metus tempus quis semper ante placerat. Morbi ligula sapien, semper quis condimentum vitae, congue et lacus.
-			</div>
-		</div>
-		<div id="inline-text5" style="display:none;">
-			<div class="inline-text">
-				<h1 class="m-bottom-30">The only important thing about design is how it relates to people.</h1> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis dui quis ipsum pulvinar varius. Quisque congue pharetra sollicitudin. Donec consequat cursus felis. Curabitur molestie, sapien vel tempor sollicitudin, eros dolor tristique elit, ac dictum mauris urna id felis. Aliquam leo nulla, laoreet eget bibendum nec, suscipit sit amet lectus. <br /> <br />Quisque vitae eros nisi. Sed molestie interdum nunc, id egestas odio posuere ac. Mauris quam felis, convallis at mollis et, faucibus at nisl. Pellentesque sit amet urna sed magna vestibulum malesuada. Etiam luctus enim id metus tempus quis semper ante placerat. Morbi ligula sapien, semper quis condimentum vitae, congue et lacus.
-			</div>
-		</div>
 	</div>
-	<div class="section news" id="news">
-		<div class="container">
-			<div class="one-third m-top-115">
-				<div class="summary-dark-bg">
-					stay tuned. <br />
-					read our <br />
-					<span>news</span>.					
-				</div>
-			</div>
-			<div class="clear"></div>
-			<div class="summary-small-dark-bg m-top-50 m-bottom-100">
-				we are a full service digital agency from Earth. We design and build <span>websites, applications, mobile solutions</span> and other awesome digital media.				
-			</div>
-			<div class="clear"></div>
-			<div class="list_carousel">
-				<ul id="news-slides">
-					<li>
-						<div class="one-third m-bottom-60">
-							<h2 class="m-bottom-25 read-more">Development of new lorem ipsum dolor</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-1" href="popup/news_1.html"></a>							
-							</p>
-						</div>
-						<div class="one-third m-bottom-60">
-							<h2 class="m-bottom-25 read-more">First time donec est sei nullam per lorem</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-2" href="popup/news_2.html"></a>							
-							</p>
-						</div>
-						<div class="one-third last m-bottom-60">
-							<h2 class="m-bottom-25 read-more">News of the day from semper tellus leo</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-3" href="popup/news_3.html"></a>							
-							</p>
-						</div>
-						<div class="one-third">
-							<h2 class="m-bottom-25 read-more">Lovely staff for vitae aenenan vulputate</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-4" href="popup/news_4.html"></a>							
-							</p>
-						</div>
-						<div class="one-third">
-							<h2 class="m-bottom-25 read-more">Nullam dictum felis eu pede mollis</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-5" href="popup/news_5.html"></a>							
-							</p>
-						</div>
-						<div class="one-third last">
-							<h2 class="m-bottom-25 read-more">Vivamus elementum se semper nisi</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-6" href="popup/news_6.html"></a>							
-							</p>
-						</div>
-					</li>
-					<li>
-						<div class="one-third m-bottom-60">
-							<h2 class="m-bottom-25 read-more">Development of new lorem ipsum dolor</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-7" href="popup/news_7.html"></a>							
-							</p>
-						</div>
-						<div class="one-third m-bottom-60">
-							<h2 class="m-bottom-25 read-more">First time donec est sei nullam per lorem</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-8" href="popup/news_8.html"></a>							
-							</p>
-						</div>
-						<div class="one-third last m-bottom-60">
-							<h2 class="m-bottom-25 read-more">News of the day from semper tellus leo</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-9" href="popup/news_9.html"></a>							
-							</p>
-						</div>
-						<div class="one-third">
-							<h2 class="m-bottom-25 read-more">Lovely staff for vitae aenenan vulputate</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-10" href="popup/news_10.html"></a>							
-							</p>
-						</div>
-						<div class="one-third">
-							<h2 class="m-bottom-25 read-more">Nullam dictum felis eu pede mollis</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-11" href="popup/news_11.html"></a>							
-							</p>
-						</div>
-						<div class="one-third last">
-							<h2 class="m-bottom-25 read-more">Vivamus elementum se semper nisi</h2>
-							<p>
-								Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus. Vivamus elementum se semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae seasne eleifend.
-								<a class="read-more" id="news-12" href="popup/news_12.html"></a>							
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-			<div class="one-third news-nav">
-				<a id="news-prev" class="prev" href="#"></a>
-				<a id="news-next" class="next" href="#"></a>				
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div class="section milestones" id="milestones">
-		<div class="container">
-			<div class="one-third m-top-115">
-				<div class="summary-white-bg">
-					our small <br />
-					office <br />
-					<span>milestones.</span>					
-				</div>
-			</div>
-			<div class="clear"></div>
-			<div class="summary-small-white-bg m-top-50 m-bottom-75">
-				we are a full service digital agency from Earth. We design and build <span>websites, applications, mobile solutions</span> and other awesome digital media.				
-			</div>
-			<div class="clear"></div>
-			<div class="one-half">
-				<ul class="milestones-list">
-					<li>
-						<div class="milestones-wrapper">
-							<img src="media/images/coffee_icon.png" alt="milestones_image_01" />
-							<span class="span-number">29</span>							
-						</div>
-						<p>
-							<span class="span-milestones">coffee cups per day</span>
-							Nullam dictum felis eu pede set mollis pretium. Integer ticidunt. Cras dapibus vivamus per teste.							
-						</p>
-					</li>
-					<li>
-						<div class="milestones-wrapper">
-							<img src="media/images/tree.png" alt="milestones_image_02" />
-							<span class="span-number">04</span>							
-						</div>
-						<p>
-							<span class="span-milestones">trees saved per day</span>
-							Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus vivamus per teste.							
-						</p>	
-					</li>
-					<li>
-						<div class="milestones-wrapper">
-							<img src="media/images/clock.png" alt="milestones_image_03" />
-							<span class="span-number">02</span>							
-						</div>
-						<p>
-							<span class="span-milestones">minutes late per day</span>
-							Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus vivamus per teste.							
-						</p>
-					</li>
-				</ul>
-			</div>
-			<div class="one-half last">
-				<ul class="milestones-list">
-					<li>
-						<div class="milestones-wrapper">
-							<img src="media/images/camera.png" alt="milestones_image_04" />
-							<span class="span-number">18</span>							
-						</div>
-						<p>
-							<span class="span-milestones">photos made per day</span>
-							Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus vivamus per teste.							
-						</p>
-					</li>
-					<li>
-						<div class="milestones-wrapper">
-							<img src="media/images/mail.png" alt="milestones_image_05" />
-							<span class="span-number">22</span>							
-						</div>
-						<p>
-							<span class="span-milestones">emails sent per day</span>
-							Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus vivamus per teste.							
-						</p>
-					</li>
-					<li>
-						<div class="milestones-wrapper">
-							<img src="media/images/note.png" alt="milestones_image_06" />
-							<span class="span-number">06</span>							
-						</div>
-						<p>
-							<span class="span-milestones">music hours per day</span>
-							Nullam dictum felis eu pede mollis pretium. Integer ticidunt. Cras dapibus vivamus per teste.							
-						</p>
-					</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	<div class="chart">
-	</div>
+	
+	<!-- contact -->
 	<div class="section contact" id="contact">
 		<div class="container">
 			<div class="one-third m-top-115">

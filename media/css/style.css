@@ -14,7 +14,7 @@ p
 	line-height: 28px;
 	color: #2d2924;
 }
-.event p, .news p, .contact p, .contact-form p
+.event p, .contact p, .contact-form p
 {
 	color: #edece9;
 }
@@ -81,18 +81,6 @@ a:active
 	padding-bottom: 110px;
 	background-color: #797264;
 }
-
-
-.news
-{
-	padding-bottom: 110px;
-	background-color: #1c2224;
-}
-.milestones
-{
-	padding-bottom: 70px;
-}
-
 .divider
 {
 	width: 450px;
@@ -136,8 +124,8 @@ h3
 .summary-dark-bg
 {
 	padding-bottom: 30px;
-	font-size: 50px;
-	line-height: 55px;
+	font-size: 45px;
+	line-height: 50px;
 	font-weight: 300;
 	color: #edece9;
 	border-bottom: 10px solid #403c35;
@@ -146,8 +134,8 @@ h3
 .summary-white-bg
 {
 	padding-bottom: 30px;
-	font-size: 50px;
-	line-height: 55px;
+	font-size: 45px;
+	line-height: 50px;
 	font-weight: 300; 
 	color: #2d2924;
 	border-bottom: 10px solid #cac8bf;
@@ -202,13 +190,13 @@ span
 	font-weight: 300; 
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 0px 1px #000;
 	-webkit-font-smoothing: antialiased;
 }
 .desc-countdown {
 	margin-top: 30px;
 	color: #fff;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 0px 1px #000;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Open Sans';
 	font-size: 28px;
@@ -538,7 +526,7 @@ ul#home-slides li
 	font-weight: 300; 
 	text-align: left;
 	color: #fff;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 0px 1px #000;
 	-webkit-font-smoothing: antialiased;
 }
 .services .list_carousel
@@ -747,90 +735,6 @@ ul.gallery li.item.portfolio-text
 }
 
 /******************************************************************************/
-/*  NEWS                                                                      */
-/******************************************************************************/
-a#news-prev
-{
-	display: inline-block;
-	margin-left: 0px !important;
-	width: 40px;
-	height: 40px;
-	background-image: url('../images/about_arrow_left.png');
-    background-repeat: no-repeat;
-}
-a#news-next
-{
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	background-image: url('../images/about_arrow_right.png');
-    background-repeat: no-repeat;
-}
-a#news-prev.hover_effect, a#news-next.hover_effect, a.read-more.hover_effect
-{
-	background-position: left bottom;
-}
-.news h2.hover_effect
-{
-	/*color: #8b999d;*/
-	color: #ac4636;
-}
-.news h2
-{
-	cursor: pointer;
-}
-a.read-more
-{
-	display: inline-block;
-    height: 20px;
-	width: 26px;
-	background-image: url('../images/news_arrow.png');
-    background-repeat: no-repeat;
-	vertical-align: middle;
-	margin-left: 15px;
-}
-
-/******************************************************************************/
-/*  MILESTONES                                                                */
-/******************************************************************************/
-.milestones-list img
-{
-	display: block;
-	float: left;
-	padding-top: 15px;
-}
-span.span-number
-{
-	font-size: 100px;
-	line-height: 100px;
-	color: #e95b37;
-}
-span.span-milestones
-{
-	display: block; 
-	margin-bottom: 10px;
-	font-size: 20px;
-	line-height: 24px;
-	letter-spacing: -0.03em;
-	color: #2d2924;
-}
-.milestones-wrapper
-{
-	width: 222px;
-	float: left;
-}
-ul.milestones-list
-{
-}
-ul.milestones-list li        
-{
-	clear: both;
-	margin-bottom: 50px;
-}
-
-
-
-/******************************************************************************/
 /*  CONTACT                                                                   */
 /******************************************************************************/
 .contact p
@@ -907,12 +811,12 @@ span.span-contact-form
 }
 #mail-message 
 {
-	width: 200px;
+	width: 300px;
 	height: 30px;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 30px;
 	text-align: left;
-	color: #f05c45;
+	color: #ffffff;
 }
 
 /******************************************************************************/
@@ -1065,6 +969,55 @@ iframe
 div.vimeo
 {
 	background-color: #f0f0f0;
+}
+
+
+/******************************************************************************/
+/*  TWITTER HASHTAGS                                                          */
+/******************************************************************************/
+
+#jstwitter {
+    width: 300px;
+    font-family: georgia;
+    font-size: 12px;
+    color: #edece9;
+    padding: 10px 10px;
+    margin:0 auto;
+    background:#FFF;
+    border-radius:4px;
+}
+ 
+#jstwitter h1 {
+    text-align:center;
+    margin-top:5px;
+}
+ 
+#jstwitter .tweet {
+    margin: 0 auto 15px auto;
+    padding: 0 0 15px 0;
+    border-bottom: 1px dotted #ccc;
+}
+ 
+#jstwitter .tweet a {
+    text-decoration: none;
+    color: #03a8e5;
+}
+ 
+#jstwitter .tweet a:hover {
+    text-decoration: underline;
+}
+ 
+#jstwitter .tweet .text {
+    display:block;
+}
+ 
+#jstwitter .tweet .time, #jstwitter .tweet .user {
+    font-style: italic;
+    color: #666666;
+}
+ 
+#jstwitter .tweet:last-child {
+    border:0;
 }
 
 /******************************************************************************/

@@ -10,9 +10,27 @@ jQuery(window).load(function() {
 	displayHints();	
 	
 	/******************************************************************************/
+	/*  COUNTDOWN                                                                 */
+	/******************************************************************************/
+	var year = "2013";
+	var month = "5";
+	var day = "14";
+	
+	var austDay = new Date();
+	austDay = new Date(year, month -1, day);
+	$('#countdown').countdown({
+		until: austDay,
+		format: "dHMS",
+		labels: ['','','','','','',''],
+		digits:['0','1','2','3','4','5','6','7','8','9']
+	});
+	
+	
+	/******************************************************************************/
 	/*  SLIDERS                                                                   */
 	/******************************************************************************/
-	$('#testimonials-slides').carouFredSel({	
+	
+	/*$('#testimonials-slides').carouFredSel({	
 		responsive: true,
 		auto: false,
 		align: 'center',
@@ -27,7 +45,7 @@ jQuery(window).load(function() {
 		}, items: {
 			height: 'variable'
 		}
-	});	
+	});	*/
 	
 	$('#home-slides').carouFredSel({	
 		responsive: true,
@@ -45,7 +63,7 @@ jQuery(window).load(function() {
 		}
 	});	
 	
-	$('#about-left-slides').carouFredSel({	
+	/*$('#about-left-slides').carouFredSel({	
 		responsive: true,
 		auto: false,
 		align: 'center',
@@ -60,7 +78,7 @@ jQuery(window).load(function() {
 		}, items: {
 			height: 'variable'
 		}
-	});	
+	});	*/
 	
 	$('#about-middle-slides').carouFredSel({	
 		responsive: true,
@@ -95,23 +113,7 @@ jQuery(window).load(function() {
 			height: 'variable'
 		}
 	});
-	
-	$('#news-slides').carouFredSel({	
-		responsive: true,
-		auto: false,
-		align: 'center',
-		height: 'variable',
-		scroll: 1,	
-		prev: '#news-prev',
-		next: '#news-next',
-		mousewheel: false,
-		swipe: {
-			onMouse: false,
-			onTouch: false
-		}, items: {
-			height: 'variable'
-		}
-	});	
+		
 	
 	/******************************************************************************/
 	/*   BUTTON HOVER                                                             */
@@ -179,19 +181,6 @@ jQuery(window).load(function() {
 			});
 		
 	}
-	
-	// countdown
-	var year = "2013";
-	var month = "3";
-	var day = "14";
-	var austDay = new Date();
-	austDay = new Date(year, month -1, day);
-	$('#countdown').countdown({
-		until: austDay,
-		format: "dHMS",
-		labels: ['','','','','','',''],
-		digits:['0','1','2','3','4','5','6','7','8','9']
-	});
 });
 
 /******************************************************************************/
