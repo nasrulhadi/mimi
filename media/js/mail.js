@@ -1,42 +1,9 @@
-var subscribe = function()
-{
-	var inputEmail = $('#subscriberEmail').val();
-    var isValid = true;
-    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-    if(!emailReg.test(inputEmail)){
-        isValid = false;
-		$("#display").html("Enter valid email!");
-		setTimeout("$('#display').empty(); ", 6000);
-    }
-    if(isValid){
-        var params = {
-            'action'    : 'Subscribe',
-            'email'     : inputEmail
-        };
-        $.ajax({
-            type: "POST",
-            url: "php/mainHandler.php",
-            data: params,
-            success: function(response){
-            	$('#subscriberEmail').val('');
-				var responseObj = jQuery.parseJSON(response);
-				if(responseObj.ResponseData) {
-					$("#display").html(responseObj.ResponseData);
-				}
-				setTimeout("$('#display').empty(); ", 6000); 
-				ResetInput();   
-				displayHints();	
-            }
-        });
-    }
-};
-
 var SendMail = function(){
     var isValid = true;
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
     if(!emailReg.test($('#email').val()) || $('#email').val() == ""){
         isValid = false;
-		$("#mail-message").html("Enter valid email!");
+		$("#mail-message").html("* Enter valid email!");
 		setTimeout("$('#mail-message').empty(); ", 6000);
     }
     if(isValid){
@@ -44,16 +11,17 @@ var SendMail = function(){
             'action'    : 'SendMessage',
             'name'      : $('#name').val(),
             'email'     : $('#email').val(),
-            'subject'   : 'Email from ARGUS',
+            'subject'   : 'Email from SIMIMI',
             'message'   : $('#message').val()
         };
         $.ajax({
             type: "POST",
-            url: "php/mainHandler.php",
+            url: "media/php/mail.php",
             data: params,
             success: function(response){
                 if(response){
                     var responseObj = jQuery.parseJSON(response);
+                    alert(responseObj.ResponseData);
                     if(responseObj.ResponseData)
                     {
 						$("#mail-message").html(responseObj.ResponseData);
@@ -85,9 +53,10 @@ var SendMail = function(){
                         error ="Unespected error, please try again later.";
                 }
                 if(error){
-                    alert(error);
+                    $("#mail-message").html(error);
                 }
             }
+            
         });
     }
 };
