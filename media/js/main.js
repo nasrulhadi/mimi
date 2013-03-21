@@ -63,6 +63,22 @@ jQuery(window).load(function() {
 		}
 	});	
 	
+	$('#twitter-slides').carouFredSel({	
+		responsive: true,
+		auto: false,
+		align: 'center',
+		height: 'variable',
+		scroll: 1,		
+		next: '#twitter-next',
+		mousewheel: true,
+		swipe: {
+			onMouse: true,
+			onTouch: true
+		}, items: {
+			height: 'variable'
+		}
+	});	
+	
 	/*$('#about-left-slides').carouFredSel({	
 		responsive: true,
 		auto: false,

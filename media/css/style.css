@@ -61,7 +61,7 @@ a:active
 }
 .about
 {
-	padding-bottom: 145px;
+	padding-bottom: 125px;
 }
 .event
 {
@@ -70,7 +70,7 @@ a:active
 }
 .photos
 {
-	padding-bottom: 200px;
+	padding-bottom: 150px;
 }
 .contact
 {
@@ -81,13 +81,22 @@ a:active
 	padding-bottom: 110px;
 	background-color: #797264;
 }
-.divider
+.divider-white
 {
-	width: 450px;
-	height: 50px;
+	height: 36px;
+	margin-top:75px;
 	background-image: url('../images/divider.png');
 	background-color: transparent;
 	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.divider-dark
+{
+	height: 38px;
+	margin-top:75px;
+	background-image: url('../images/divider.png');
+	background-color: transparent;
+	background-position: center top;
 	background-repeat: no-repeat;
 }
 footer
@@ -493,6 +502,21 @@ a#home-next.hover_effect
 {
 	background-position: left bottom;
 }
+a#twitter-next
+{
+	display: inline-block;
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-top: 25px;
+	margin-left: 45px; 
+	background-image: url('../images/home_arrow.png');
+    background-repeat: no-repeat; 
+}
+a#twitter-next.hover_effect
+{
+	background-position: left bottom;
+}
 a#testimonials-prev, a#about-left-prev, a#about-middle-prev, a#about-right-prev
 {
 	display: inline-block;
@@ -527,6 +551,17 @@ ul#home-slides li
 	text-align: left;
 	color: #fff;
 	text-shadow: 1px 0px 1px #000;
+	-webkit-font-smoothing: antialiased;
+}
+ul#twitter-slides li  
+{
+	font-family: 'Open Sans', sans-serif, Arial;
+	font-size: 14px;
+	letter-spacing: -0.03em;
+	line-height: 28px;
+	font-weight: 300; 
+	text-align: left;
+	color: #fff;
 	-webkit-font-smoothing: antialiased;
 }
 .services .list_carousel
@@ -833,19 +868,19 @@ footer p
 }
 .socio_contact 
 {
-	width: 209px;	
+	width: 240px;	
 	margin: 0 auto;
 	margin-top:40px;
 }
 .socio_contact ul 
 {
-	width: 209px;
+	width: 250px;
 	line-height: normal;  
 }
 .socio_contact ul li 
 {
 	float: left;
-	margin-right: 11px;
+	margin-right: 10px;
 }
 .socio_contact ul li.last 
 {
@@ -854,22 +889,30 @@ footer p
 .socio_contact ul li a
 {	
     display: block;
-    height: 33px;
-    width: 33px;
+    height: 32px;
+    width: 32px;
 }
 .socio_contact ul li a:active
 {
     background-position: left bottom;
 }
+.socio_contact ul li a 
+{
+	 opacity:0.4;
+	 filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
 .socio_contact ul li a:hover 
 {
-	 background-position: left bottom;
+	 opacity:1;
+	 filter:alpha(opacity=100); /* For IE8 and earlier */
 }
-a.socio_contact_twitter {background: transparent url('../images/contact_twitter_icon.png') no-repeat;}
-a.socio_contact_facebook {background: transparent url('../images/contact_facebook_icon.png') no-repeat;}
-a.socio_contact_dribbble {background: transparent url('../images/contact_dribbble_icon.png') no-repeat;}
-a.socio_contact_pinterest {background: transparent url('../images/contact_pinterest_icon.png') no-repeat;}
-a.socio_contact_flickr {background: transparent url('../images/contact_flickr_icon.png') no-repeat;}
+a.socio_footer_twitter {background: transparent url('../images/footer_twitter.png') no-repeat;}
+a.socio_footer_facebook {background: transparent url('../images/footer_facebook.png') no-repeat;}
+a.socio_footer_dribbble {background: transparent url('../images/footer_dribbble.png') no-repeat;}
+a.socio_footer_pinterest {background: transparent url('../images/footer_pinterest.png') no-repeat;}
+a.socio_footer_flickr {background: transparent url('../images/footer_flickr.png') no-repeat;}
+a.socio_footer_gplus {background: transparent url('../images/footer_gplus.png') no-repeat;}
 
 .love 
 {
@@ -976,48 +1019,34 @@ div.vimeo
 /*  TWITTER HASHTAGS                                                          */
 /******************************************************************************/
 
-#jstwitter {
-    width: 300px;
-    font-family: georgia;
-    font-size: 12px;
-    color: #edece9;
-    padding: 10px 10px;
-    margin:0 auto;
-    background:#FFF;
-    border-radius:4px;
+.box-twitter {
+	padding:20px;
+	background: url(../images/twitter_logo.png) no-repeat;
+	background-position: right bottom;
+	background-color: #403C35;
+	-moz-border-radius: 5px;
+	border-radius: 2px;
 }
- 
-#jstwitter h1 {
-    text-align:center;
-    margin-top:5px;
+
+a.twtr-hashtag, a.twtr-hyperlink
+{
+	color:#CCB99F;
 }
- 
-#jstwitter .tweet {
-    margin: 0 auto 15px auto;
-    padding: 0 0 15px 0;
-    border-bottom: 1px dotted #ccc;
+
+a.twtr-hashtag:hover, a.twtr-hyperlink:hover
+{
+	color:#F2DCBD;
 }
- 
-#jstwitter .tweet a {
-    text-decoration: none;
-    color: #03a8e5;
+
+a.time:hover, a.user:hover 
+{
+	color: #edece9;
 }
- 
-#jstwitter .tweet a:hover {
-    text-decoration: underline;
-}
- 
-#jstwitter .tweet .text {
-    display:block;
-}
- 
-#jstwitter .tweet .time, #jstwitter .tweet .user {
-    font-style: italic;
-    color: #666666;
-}
- 
-#jstwitter .tweet:last-child {
-    border:0;
+
+a.time, a.user{
+	font-size: 13px;
+	color:#edece9;
+	font-weight:bold;
 }
 
 /******************************************************************************/
@@ -1042,6 +1071,10 @@ div.vimeo
 .m-top-75
 {
 	margin-top: 75px;
+}
+.m-top-100
+{
+	margin-top: 100px;
 }
 .m-top-115
 {

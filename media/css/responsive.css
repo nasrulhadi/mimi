@@ -34,7 +34,7 @@
 	a#home-next
 	{
 		margin-left: 0px;
-	}
+	}	
 	.testimonials, .name  
 	{
 		width: 100%;
@@ -65,42 +65,11 @@
 	{
 		padding-left: 20px;
 	}
-	.milestones-wrapper
-	{
-		width: 100px;	
-	}
-	ul.milestones-list img
-	{
-		float: none;	
-	}
 	span.span-number
 	{
 		float: left;
 		font-size: 64px;
 		line-height: 70px;
-	}
-	.portfolio .one-half
-	{
-		width: 450px;	
-	}
-	ul.gallery li.item {
-		width: 180px;
-		height: 135px;
-	}
-	.portfolio-wrapper
-	{
-		font-size: 14px;
-		line-height: 20px;	
-	}
-	.portfolio-quote
-	{
-		width: 31px;
-		height: 21px;	
-	}
-	.portfolio-signature
-	{
-		font-size: 11px;
-		line-height: 11px;
 	}
 	.modal
 	{
@@ -113,6 +82,50 @@
 	.modal
 	{
 		width: 576px;
+	}
+	ul#home-slides li  
+	{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.countdown
+	{
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+	.desc-countdown {
+		font-size: 23px;
+	}
+	.countdown_amount {
+		font-size: 80px;
+	}
+	span.event-day
+	{
+		font-size: 75px;
+	}
+	.event-right-title
+	{       
+		font-size: 10px;
+	}
+	.event-right-content
+	{
+		font-size: 14px;
+	}
+	.event-right-role
+	{
+		font-size: 30px;
+	}
+	.event-right-line
+	{
+		margin-left: 103px;
+	}
+	.event-right-wrapper
+	{
+		width: 140px;
+		margin-right:15px;
+		margin-bottom:30px;
+		border-left: 7px solid #403c35;
+		padding-left:15px;
 	}
 }
 
@@ -181,63 +194,49 @@
 		height: 180px;
 		margin: 0 auto;	
 	}
-	.portfolio-wrapper
+	ul#home-slides li  
 	{
-		font-size: 18px;
-		line-height: 25px;
+		font-size: 25x;
+		line-height: 30px;
 	}
-	.portfolio-quote
+	.countdown
 	{
-		width: 42px;
-		height: 29px;	
+		padding-bottom: 10px;
+		font-size: 12px;
 	}
-	.portfolio-signature
+	.desc-countdown {
+		font-size: 23px;
+	}
+	.countdown_amount {
+		font-size: 80px;
+	}
+	span.event-day
+	{
+		font-size: 85px;
+	}
+	.event-right-title
+	{       
+		font-size: 10px;
+	}
+	.event-right-content
 	{
 		font-size: 14px;
-		line-height: 25px;
 	}
-	a.popup-close
+	.event-right-role
 	{
-		display: none;
+		font-size: 34px;
 	}
-	.portfolio .one-half
+	.event-right-wrapper
 	{
-		width: 100%;
+		width: 170px;
+		margin-right:20px;
+		margin-bottom:50px;
+		border-left: 7px solid #403c35;
+		padding-left:20px;
 	}
-	.news .one-third
+	.box-twitter
 	{
-		margin-bottom: 30px !important;	
-	}
-	.milestones-wrapper
-	{
-		width: 100%;
-	}
-	ul.milestones-list img
-	{
-		float: left;	
-	}
-	span.span-number
-	{
-		float: none;
-		font-size: 100px;
-		line-height: 100px;
-	}
-	span.span-milestones
-	{
-		width: 100%;
-	}
-	ul.milestones-list li        
-	{
-		margin-bottom: 30px;
-	}
-	article .article-content 
-	{
-		padding-left: 25px;
-		padding-right: 25px;	
-	}
-	article .article-content h1
-	{
-		width: 100%;
+		margin-top:50px;
 	}
 	.map
 	{
@@ -247,6 +246,51 @@
 
 @media only screen and (min-width: 480px) and (max-width: 767px) 
 {
+	
+	ul#home-slides li  
+	{
+		font-size: 25px;
+		line-height: 27px;
+	}
+	.countdown
+	{
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+	.desc-countdown {
+		font-size: 20px;
+	}
+	.countdown_amount {
+		font-size: 60px;
+	}
+	span.event-day
+	{
+		font-size: 85px;
+	}
+	.event-right-title
+	{       
+		font-size: 10px;
+	}
+	.event-right-content
+	{
+		font-size: 14px;
+	}
+	.event-right-role
+	{
+		font-size: 34px;
+	}
+	.event-right-wrapper
+	{
+		width: 170px;
+		margin-right:20px;
+		margin-bottom:50px;
+		border-left: 7px solid #403c35;
+		padding-left:20px;
+	}
+	.box-twitter
+	{
+		margin-top:50px;
+	}
 	.modal
 	{
 		width: 420px;
@@ -255,14 +299,6 @@
 
 @media only screen and (max-width: 479px) 
 {
-	#subscriberEmail
-	{
-		width: 220px;	
-	}
-	#subscribeButton
-	{
-		width: 60px;
-	}
 	.modal
 	{
 		width: 300px;
@@ -270,5 +306,53 @@
 	.small-menu-wrapper
 	{
 		width: 300px;	
+	}
+	ul#home-slides li  
+	{
+		font-size: 25px;
+		line-height: 27px;
+	}
+	.countdown
+	{
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+	.desc-countdown {
+		font-size: 17px;
+	}
+	.countdown_amount {
+		font-size: 60px;
+	}
+	span.event-day
+	{
+		font-size: 75px;
+	}
+	.event-wrapper
+	{
+		width: 250px;
+	}
+	.event-right-title
+	{       
+		font-size: 12px;
+	}
+	.event-right-content
+	{
+		font-size: 14px;
+	}
+	.event-right-role
+	{
+		font-size: 44px;
+	}
+	.event-right-wrapper
+	{
+		width: 250px;
+		margin-right:20px;
+		margin-bottom:30px;
+		border-left: 7px solid #403c35;
+		padding-left:25px;
+	}
+	.box-twitter
+	{
+		margin-top:50px;
 	}
 }
