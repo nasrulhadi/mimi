@@ -9,24 +9,6 @@
 		padding-left: 10px;
 		padding-right: 10px;	
 	}
-	#subscriberEmail
-	{
-		width: 360px;	
-	}
-	#subscribeButton
-	{
-		width: 75px;	
-	}
-	.services-content
-	{
-		float: left;
-		margin-bottom: 30px;
-		margin-top: 30px;	
-	}
-	ul.services-list li 
-	{
-		margin-bottom: 0px;	
-	}
 	.home .list_carousel
 	{
 		width: 300px;
@@ -97,7 +79,7 @@
 		font-size: 23px;
 	}
 	.countdown_amount {
-		font-size: 80px;
+		font-size: 70px;
 	}
 	span.event-day
 	{
@@ -314,14 +296,10 @@
 	}
 	.countdown
 	{
-		padding-bottom: 10px;
-		font-size: 12px;
+		display: none;
 	}
 	.desc-countdown {
-		font-size: 17px;
-	}
-	.countdown_amount {
-		font-size: 60px;
+		display: none;
 	}
 	span.event-day
 	{
@@ -354,5 +332,6 @@
 	.box-twitter
 	{
 		margin-top:50px;
+		padding:10px;
 	}
 }
