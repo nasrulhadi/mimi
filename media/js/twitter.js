@@ -8,7 +8,7 @@ JQTWEET = {
     user: 'nasrulhaadi', //username
     numTweets: 5, //number of tweets
     cacheExpiry: 2, //get the new cache in 2 hours
-    appendTo: '#jstwitter',
+    appendTo: '#twitter-slides',
      
     // core function of jqtweet
     // https://dev.twitter.com/docs/using-search
@@ -41,7 +41,7 @@ JQTWEET = {
             data: request,
             success: function(data, textStatus, xhr) {
  
-                var text, name, html = '<div class="tweet"><span class="text">TWEET_TEXT</span><span class="time"><a href="URL" target="_blank">AGO</a></span> by <span class="user">USER</span></div>';
+                var text, name, html = '<li class="text">TWEET_TEXT<br><a href="URL" class="time" target="_blank">AGO</a> ~ <a href="UNAME" class="user" target="_blank">@USER</a></li>';
          
                 try {
          
@@ -58,6 +58,7 @@ JQTWEET = {
                                 .replace(/USER/g, name)
                                 .replace('AGO', JQTWEET.timeAgo(data[i].created_at) )
                                 .replace('URL', 'http://twitter.com/' + data[i].from_user + '/status/' + data[i].id_str )
+                                .replace('UNAME', 'http://twitter.com/' + name )
                         );                              
      
                     }                   
@@ -165,8 +166,17 @@ JQTWEET = {
       },
  
       hash: function(tweet) {
+
         return tweet.replace(/(^|\s+)#(\w+)/gi, function(m, before, hash) {
-          return before + '<a target="_blank" class="twtr-hashtag" href="http://twitter.com/search?q=%23' + hash + '">#' + hash + '</a>';
+		  var hashFeed;
+		  var hashOri = hash.toLowerCase();
+		  
+		  if(hashOri == JQTWEET.hash.substr(3)){
+			hashFeed = "<strong>"+hash+"</strong>";
+		  }else{
+			hashFeed = hash;
+		  }
+          return before + '<a target="_blank" class="twtr-hashtag" href="http://twitter.com/search?q=%23' + hash + '">#' + hashFeed + '</a>';
         });
       },
  

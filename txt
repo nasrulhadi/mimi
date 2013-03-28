@@ -12,16 +12,16 @@ count down
 
 
 task:
-divider warna gelap buat background putih
-ganti icon social media
-php contact form -->
+divider warna gelap buat background putih --> ok
+ganti icon social media --> ok
+php contact form --> ok
 logo ring diganti tulisan nama mempelai
-twitter feed
+twitter feed --> ok
 
 
 next:
 fullwscreen home view
-responsive
+responsive --> ok
 menyiapkan halaman buat demo
 photosop
 
