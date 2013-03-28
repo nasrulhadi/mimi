@@ -240,9 +240,9 @@ span
 .logo
 {
 	display: inline-block;
-	width: 105px;
+	width: 355px;
 	height: 70px;
-	background-image: url(../images/rings.png);
+	background-image: url(../images/logo.png);
 	background-color: transparent;
 	background-position: center center;
 	background-repeat: no-repeat;
